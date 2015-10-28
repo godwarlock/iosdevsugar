@@ -16,4 +16,8 @@ $ rvictl -s <UDID>
 $ ifconfig rvi0
  rvi0: flags=3005<UP,DEBUG,LINK0,LINK1> mtu 0
 ```
-4. 在Mac上使用任意抓包工具tcpdump、wireshark等，监听创建的rvi接口即可。使用完之后需要将创建的虚拟接口移除$ rvictl -x <UDID>
+4. 在Mac上使用任意抓包工具tcpdump、wireshark等，监听创建的rvi接口即可。
+5. 使用完之后需要将创建的虚拟接口移除
+```
+$ rvictl -x <UDID>
+```
