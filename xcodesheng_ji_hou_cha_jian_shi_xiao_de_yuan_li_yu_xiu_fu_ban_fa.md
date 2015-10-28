@@ -6,13 +6,15 @@ Xcode 的插件丰富了 Xcode 的功能，而且有了 Alcatraz ，插件的管
 #####问题原因
 Xcode 的插件放置在 `~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins` 目录下，为 .xcplugin 格式。每个 xcplugin 中存在一个 Info.plist，其中有一项为 DVTPlugInCompatibilityUUIDs
 
+```
 DVTPlugInCompatibilityUUIDs 的作用：
 
-*插件通过 DVTPlugInCompatibilityUUIDs 来指定能够运行此插件的 Xcode 版本。*
+插件通过 DVTPlugInCompatibilityUUIDs 来指定能够运行此插件的 Xcode 版本。
+```
 
 因此，`DVTPlugInCompatibilityUUIDs` 中存放的是已适配 Xcode 版本对应的 UUID，Xcode 在启动加载控件时，将当前 UUID 同插件 Info.plist 中 `DVTPlugInCompatibilityUUIDs` 存放的 UUID 数组进行匹配，如果没有匹配项，说明此插件无法在该版本的 Xcode 运行，插件也就失效了。
 
-解决办法
+#####解决办法
 
 将当前版本的 UUID 加到 DVTPlugInCompatibilityUUIDs 中即可。
 
