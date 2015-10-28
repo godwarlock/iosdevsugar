@@ -7,7 +7,7 @@
 
 1. 通过USB口将iPhone连接到Mac上。
 2. 使用Xcode的organizer工具获取到iPhone的UDID
-3. 使用rvictl命令创建RVI接口(remote virtual interface),使用iPhone的UDID作为参数。</br>
+3. 使用rvictl命令创建RVI接口(remote virtual interface),使用iPhone的UDID作为参数。
 ```
 $ rvictl -s <UDID>
 ```
