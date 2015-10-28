@@ -14,6 +14,7 @@ $ rvictl -s <UDID>
 ```
 
 如果想捕获多个设备的网络包，可以使用上述命令创建多个设备的RVI,传递每个iOS设备的UDID作为参数即可。RVI虚拟接口的命名规则为rvi0,rvi1,rvi2,…,可使用ifconfig命令查看
+
 ```
 $ ifconfig rvi0
 ```
