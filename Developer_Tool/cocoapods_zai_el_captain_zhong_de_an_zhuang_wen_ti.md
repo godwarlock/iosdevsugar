@@ -3,7 +3,7 @@
 在10.11系统中，由于/usr/bin/ 被系统保护，在这种情况下，如果你使用如下的命令：
 
 ```
-sudo gem install cocoa pods -v
+sudo gem install cocoapods -v
 ```
 
 就会出现这样的提示：
